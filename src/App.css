@@ -1,0 +1,177 @@
+/* App.css */
+.container {
+  max-width: 800px;
+  margin: 20px auto; /* Add some top/bottom margin */
+  padding: 30px; /* Increase padding */
+  border: 1px solid #692b2b; /* Lighter border */
+  border-radius: 8px; /* More rounded corners */
+  background-color: #f0f3f8; /* Light background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* Center the main title */
+}
+
+h3 {
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #333; /* Darker label text */
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem; /* Increase padding */
+  margin-bottom: 1.25rem; /* Increase margin */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.3rem; /* Slightly more rounded */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-check {
+  margin-bottom: 1rem;
+  display: flex; /* Align input and label */
+  align-items: center;
+}
+
+.form-check-input {
+  float: none; /* Override default float */
+  margin-right: 0.75rem;
+}
+
+.form-check-label {
+  margin-left: 0; /* Reset default margin */
+}
+
+.alert {
+  padding: 1rem 1.5rem; /* Increase padding */
+  margin-bottom: 1.5rem; /* Increase margin */
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+  font-size: 0.9rem; /* Slightly smaller error text */
+  margin-top: 0.25rem;
+  display: block; /* Ensure it's on a new line */
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out; /* Button hover effect */
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+  border-color: #4e555b;
+  transform: scale(1.02);
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #1e7e34;
+  border-color: #1c7430;
+  transform: scale(1.02);
+}
+
+.d-flex {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+/* Animation for section transitions */
+.form-section-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+.form-section-slide-out {
+  animation: slideOut 0.3s ease-in forwards;
+  position: absolute; /* To allow the next to slide in over it */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+}
