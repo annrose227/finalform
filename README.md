@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# STUDENT LOGIN FORM
 
 Bajaj Finserv Qualifier - Dynamic Form Application
 Overview
@@ -50,10 +50,3 @@ TypeScript: For type safety and development.
 Tailwind CSS: For responsive and modern styling.
 Babel: For transpiling JSX.
 
-Contributing
-This project is tailored for the Bajaj Finserv qualifier. Contributions are not currently accepted, but feel free to fork and modify for personal use.
-License
-This project is for educational purposes only and is not licensed for commercial use.
-ommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
